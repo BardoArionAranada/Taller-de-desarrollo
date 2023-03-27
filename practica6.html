@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BAA</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <p>Hola Mundo</p>
+    <p id="para1">Párrafo 2</p>
+
+    <select class="seleccionado" name="ciudades" id="ciudades">
+        <option valor="Zamora">Zamora</option>
+        <option valor="Uruapan">Uruapan</option>
+        <option valor="Patzcuaro">Patzcuaro</option>
+    </select>
+
+    <p class="titulo">elemento1</p>
+    <p class="titulo">elemento2</p>
+    <p class="titulo" style="border: 10px solid red;">elemento3</p>
+
+    <div id="capa1">
+        <p>Párrafo1 capa1</p>
+        <p>Párrafo2 capa1</p>
+        <p>Párrafo3 capa1</p>
+    </div>
+    <div id="capa2">
+        <p>Párrafo capa2</p>
+    </div>
+
+    <p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </p>
+
+    <a href="https://google.com">Google</a>
+    <a href="https://yahoo.com">Yahoo</a>
+    <p style="margin-bottom: 300px;"></p>
+
+    <form name="formulario" 
+        method="get" 
+        action="envia.html" 
+        style="margin-bottom: 300px;">
+            <fieldset>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+ 
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad">
+ 
+                <label for="nivel">Nivel inglés:</label>
+                <meter id="nivel" name="nivel" value="0.1">
+                10%
+                </meter>
+ 
+                <br><br><br>
+                <label for="escala">Escala:</label>
+                <input type="range" name="escala" id="escala">
+ 
+                <input type="submit" value="Enviar">
+            </fieldset>
+    </form>
+</body>
+</html>
