@@ -1,12 +1,10 @@
-lines (82 sloc)  2.05 KB
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Practica 7</title>
+    <title> Practica7</title>
     <style>
         body{
             margin: 0px;
@@ -14,16 +12,16 @@ lines (82 sloc)  2.05 KB
         }
         #estatico{
             position: static;
-            background-color: rgb(88, 88, 209);
+            background-color: rgb(88, 189, 209);
             width: 50px;
             height: 50px;
-            border: 10px solid orange;
+            border: 10px solid rgb(0, 47, 255);
             padding: 50px;
             margin: 50px;
         }
         #fijo{
             position: fixed;
-            background-color: antiquewhite;
+            background-color: rgb(211, 16, 221);
             right: 100px;
             bottom: 200px;
             width: 100px;
@@ -32,7 +30,7 @@ lines (82 sloc)  2.05 KB
         }
         #absoluto{
             position: absolute;
-            background-color: darkgray;
+            background-color: rgb(12, 195, 143);
             left: 50px;
             bottom: 50px;
             width: 150px;
@@ -40,15 +38,15 @@ lines (82 sloc)  2.05 KB
         }
         #pegajoso{
             position: sticky;
-            background-color: rgb(233, 122, 200);
+            background-color: rgb(6, 204, 138);
             top: 50px;
             width: 100%;
             height: 200px;
-            border: 2px solid rgb(0, 0, 0);
+            border: 2px solid black;
         }
         #relativo{
             position: relative;
-            background-color: rgb(43, 255, 0);
+            background-color: rgb(218, 126, 126);
             left: 250px;
             bottom: 250px;
             width: 200px;
@@ -60,6 +58,20 @@ lines (82 sloc)  2.05 KB
             width: 30px;
             height: 30px;
 
+        }
+        #desbordado1{
+            background-color: rgb(102, 226, 226);
+            width: 300px;
+            height: 65px;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+        #desbordado2{
+            background-color: rgb(234, 115, 185);
+            width: 500px;
+            height: 65px;
+            border: 1px solid black;
+            overflow: scroll;
         }
     </style>
 </head>
@@ -84,8 +96,14 @@ lines (82 sloc)  2.05 KB
         <div id="absoluto2"></div>
     </div>
 
-        <img src="atardecer.jpg" alt="atardecer">
+        <img src="https://cdn.pixabay.com/photo/2016/10/18/21/22/beach-1751455_1280.jpg" alt="atardecer">
 
-
+    <div id="desbordado1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rerum delectus reiciendis veniam in ex consequuntur ipsum quidem consectetur, optio labore officia qui perspiciatis fuga repudiandae nihil, fugit cupiditate quod?
+    </div>
+    <p></p>
+    <div id="desbordado2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rerum delectus reiciendis veniam in ex consequuntur ipsum quidem consectetur, optio labore officia qui perspiciatis fuga repudiandae nihil, fugit cupiditate quod?
+    </div>
 </body>
 </html>
