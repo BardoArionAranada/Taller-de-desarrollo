@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gestión de registros de pacientes</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Gestión de registros de pacientes</h1>
+	
+	<form>
+		<fieldset>
+			<legend>Datos del paciente</legend>
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" required><br>
+			
+			<label for="edad">Edad:</label>
+			<input type="number" id="edad" name="edad" required><br>
+			
+			<label for="sexo">Sexo:</label>
+			<select id="sexo" name="sexo" required>
+				<option value="">Seleccione una opción</option>
+				<option value="masculino">Masculino</option>
+				<option value="femenino">Femenino</option>
+				<option value="otro">Otro</option>
+			</select><br>
+			
+			<label for="id">Número de identificación:</label>
+			<input type="text" id="id" name="id" required><br>
+			
+			<label for="contacto">Datos de contacto:</label>
+			<textarea id="contacto" name="contacto" rows="3" required></textarea><br>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Controles habituales</legend>
+			<label for="temperatura">Temperatura:</label>
+			<input type="number" id="temperatura" name="temperatura" step="0.1" required><br>
+			
+			<label for="tension">Tensión arterial:</label>
+			<input type="number" id="tension" name="tension" required><br>
+			
+			<label for="peso">Peso:</label>
+			<input type="number" id="peso" name="peso" step="0.1" required><br>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Tratamientos</legend>
+			<label for="tratamiento">Tratamiento dado:</label>
+			<input type="text" id="tratamiento" name="tratamiento" required><br>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Reacciones a los tratamientos</legend>
+			<label for="reaccion">Reacción del paciente:</label>
+			<input type="text" id="reaccion" name="reaccion" required><br>
+		</fieldset>
+		
+		<button type="submit">Registrar</button>
+	</form>
+	
+	<h2>Historial clínico del paciente</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>Fecha</th>
+				<th>Controles habituales</th>
+				<th>Tratamientos dados</th>
+				<th>Reacciones a los tratamientos</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>01/01/2023</td>
+				<td>36.5 °C / 120/80 mmHg / 70 kg</td>
+				<td>Paracet		</td>
+                <td>Ninguna</td>
+            </tr>
+            <tr>
+                <td>02/01/2023</td>
+                <td>37 °C / 110/70 mmHg / 69 kg</td>
+                <td>Amoxicilina</td>
+                <td>Erupción en la piel</td>
+            </tr>
+            <!-- más filas aquí -->
+        </tbody>
+    </table>
+</body>
+</html>
+    
