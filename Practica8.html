@@ -26,12 +26,40 @@
                 background-color: rgb(20, 239, 122);
             }
         }
+        #cuadroBlanco{
+            background: white;
+            position: absolute;
+            animation: mueveCuadro 1s infinite;
+        }
+        #cuadroBlanco1 {
+            width: 100px;
+            height: 100px;
+            left: 50px;
+        }
+    }
+        #cuadroBlanco2 {
+            width: 100px;
+            height: 100px;
+            left: 50px;
+        }
+        @keyframes mueveCuadro {
+            from {
+                  top : 0px;
+            }
+            to{ 
+                top : 200px;
+                
+            }
+            
+        }
 
     </style>
 </head>
 <body>
     
-    <div class="cuadroBlanco">
+    <div id="cuadroBlanco1" class="cuadroBlanco"><div>
+    <div id="cuadroBlanco2" class="cuadroBlanco"><div>
+
      
     </div>
 
