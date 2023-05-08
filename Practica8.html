@@ -1,117 +1,137 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animaciones</title>
-    <style>
-        body {
-            animation: colores 5s infinite;
-        }
-        @keyframes colores {
-            0% {
-                background: pink;
-            }
-            25% {
-                background: purple;
-            }
-            50% {
-                background: yellow;
-            }
-            100% {
-                background: green;
-            }
-        }
+<style>
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
  
-        .cuadroBlanco {
-            background: white;
-            position: absolute;
-            animation: mueveCuadro 5s infinite;
-        }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
  
-        #cuadroBlanco1 {
-            width: 100px;
-            height: 100px;
-            left: 50px;
-        }
+li a {
+  display: block;
+  color: #373333;
+  padding: 10px;
+  text-decoration: none;
+}
  
-        #cuadroBlanco2 {
-            width: 100px;
-            height: 100px;
-            left: 200px;
-        }
+li a.active {
+  background-color: rgb(234, 14, 234);
+  color: white;
+}
  
-        @keyframes mueveCuadro {
-            from {
-                top : 0px;
-            }
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
  
-            to {
-                top : 200px;
-            }
-            
-        }
+#home {
+    margin-left:25%;
+    padding:1px 16px;
+    height:1000px; 
+    background-color: rgb(92, 197, 195);
+}
  
-        #cuadroRojo {
-            width: 100px;
-            height: 100px;
-            background: red;
-            position: absolute;
-            left: 350px;
-            animation: mueveRojo 3s infinite;
-        }
+#news {
+    margin-left:25%;
+    padding:1px 16px;
+    height:1000px; 
+    background-color: rgba(149, 233, 237, 0.325);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
  
-        @keyframes mueveRojo {
-            0% { top: 0px }
-            25% { top: 200px }
-            50% { top: 50px }
-            100% { top: 100px }
-        }
+#contact {
+    margin-left:25%;
+    padding:1px 16px;
+    height:1000px; 
+    background-color: rgb(120, 90, 90);
+}
  
-        #cuadroMulticolor {
-            width: 100px;
-            height: 100px;
-            position: relative;
-            left: 500px;
-            animation: moverMultiColor 1s infinite;
-        }
+#about {
+    margin-left:25%;
+    padding:1px 16px;
+    height:1000px; 
+    background-color: rgb(135, 109, 44);
+}
+</style>
  
-        @keyframes moverMultiColor {
-            0% { top: 0px ; left: 500px; background: red;}
-            25% { top: 100px; left: 600px; background: blue; }
-            50% { top: 50px; left: 600px; background: green; }
-            100% { top: 100px; left: 500px; background: red; }
-        }
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
  
-        #circulo {
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            background: white;
-            left: 50%;
-            border-radius: 50%;
-            animation: crece 10s infinite;
-        }
- 
-        @keyframes crece {
-            0% { top: 0px ; width: 100px; height: 100px;}
-            100% { top: 0px ; width: 200px; height: 200px;}
-        }
-        
-    </style>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <div id="cuadroBlanco1" class="cuadroBlanco"></div>
-    <div id="cuadroBlanco2" class="cuadroBlanco"></div>
-    <div id="cuadroRojo"></div>
-    <div id="cuadroMulticolor"></div>
-    <div id="circulo"></div>
-    <h1 data-aos="flip-left" style="font-size: 100px; margin-top: 1000px;" >Hola este es un texto animado</h1>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+ 
+<ul>
+  <li><a class="active" href="#home">Inicio</a></li>
+  <li><a href="#news">Noticias</a></li>
+  <li id="contacto"><a href="#contact">Contacto</a></li>
+  <li><a href="#about">Acerca de</a></li>
+</ul>
+<div id="home" data-aos="fade-down">
+  <h2> Inicio </h2>
+  <h3>Subtitulo</h3>
+  <p>Información en texto del contenido</p>
+  <p>Información en texto del contenido</p>
+  <p>Más texto</p>
+  <p>Más texto</p>
+  <p>Más texto</p>
+  <p>Más texto</p>
+  <p>Más texto</p>
+  <p>Más texto</p>
+</div>
+ 
+<div id="news" data-aos="fade-down">
+    <h2>NOTICIAS </h2>
+    <h3>Subtitulo</h3>
+    <p>Información en texto del contenido</p>
+    <p>Información en texto del contenido</p>
+    <p>Más texto</p>
+    <p>Más texto</p>
+    <p>Más texto</p>
+    <p>Más texto</p>
+    <p>Más texto</p>
+    <p>Más texto</p>
+</div>
+ 
+  <div id="contact" data-aos="fade-down">
+    <h2>CONTACTO </h2>
+    <h3>Subtitulo</h3>
+    <p>Información en texto del contenido</p>
+    <p>Información en texto del contenido</p>
+    <p>Más texto</p>
+    <p>Más texto</p>
+    <p>Más texto</p>
+    <p>Más texto</p>
+    <p>Más texto</p>
+    <p>Más texto</p>
+  </div>
+ 
+  <div id="about" data-aos="fade-down">
+    <h2>ACERCA DE </h2>
+    <h3>Subtitulo</h3>
+    <p>Información en texto del contenido</p>
+    <p>Información en texto del contenido</p>
+    <p>Más texto</p>
+    <p>Más texto</p>
+    <p>Más texto</p>
+    <p>Más texto</p>
+    <p>Más texto</p>
+    <p>Más texto</p>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
