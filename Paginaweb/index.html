@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mejores Paisajes de la Naturaleza</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <style>
+    /* Estilos para el encabezado */
+    body {
+      background-image: url("https://images4.alphacoders.com/132/1323467.png");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-color: rgba(0, 0, 0, 0.5); /* Capa oscura sobre la imagen de fondo */
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #1E8449; /* Verde de la naturaleza */
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+    }
+    /* Estilos para el contenido principal */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2rem;
+      justify-items: center;
+    }
+
+    /* Estilos para los bloques de texto e imagen */
+    .block {
+      background-color: #F0F3F4; /* Gris claro de la naturaleza */
+      border-radius: 1rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .block img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease-out;
+    }
+
+    .block:hover img {
+      transform: scale(1.1);
+    }
+
+    .block h2 {
+      font-size: 1.5rem;
+      margin: 0;
+      padding: 1rem;
+      color: #1E8449; /* Verde de la naturaleza */
+    }
+
+    .block p {
+      font-size: 1.2rem;
+      margin: 0;
+      padding: 1rem;
+      line-height: 1.5;
+      color: #666;
+    }
+
+    /* Estilos para el botón */
+    .button {
+      background-color: #1E8449; /* Verde de la naturaleza */
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+      margin: 2rem auto;
+      display: inline-block;
+      transition: background-color 0.3s ease-out;
+    }
+
+    .button:hover {
+      background-color: #196F3D; /* Verde oscuro de la naturaleza */
+    }
+
+    /* Estilos para el pie de página */
+    footer {
+      background-color: #34495E; /* Azul de la naturaleza */
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+    }
+    
+    /* Estilos para el menú con fondo de imagen */
+    .navbar {
+      background-image: url("https://e0.pxfuel.com/wallpapers/632/297/desktop-wallpaper-sunset-beautiful-sunset-evening-dark-nature-for-16-9.jpg");
+      background-size: cover;
+      color: #fff;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+    }
+    .navbar-toggler-icon {
+      background-color: #fff;
+    }
+    .navbar-nav .nav-item {
+      padding: 0.5rem 1rem;
+    }
+    .navbar-nav .nav-item a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .navbar-nav .nav-item a:hover {
+      color: #196F3D; /* Verde oscuro de la naturaleza */
+    }
+    .dropdown-menu {
+      background-color: #1E8449; /* Verde de la naturaleza */
+    }
+    .dropdown-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .dropdown-menu a:hover {
+      background-color: #196F3D; /* Verde oscuro de la naturaleza */
+    }
+    .wide-table {
+      max-width: 800px; /* Puedes ajustar este valor según tus preferencias */
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-mountain"></i>
+        <h1> MENU DE NATURALEZA</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="fas fa-house"></i>
+              INICIO
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-tree"></i>
+              PAISAJES
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Monte Kilimanjaro, Tanzania</a></li>
+              <li><a class="dropdown-item" href="#">Antártida</a></li>
+              <li><a class="dropdown-item" href="#">Costa de Na Pali, Hawái</a></li>
+              <li><a class="dropdown-item" href="#">Capri, Italia</a></li>
+              <li><a class="dropdown-item" href="#">Salto Ángel, Venezuela</a></li>
+              <li><a class="dropdown-item" href="#">Gran Cañón, Arizona, Estados Unidos</a></li>
+              <li><a class="dropdown-item" href="#">Las Azores, Portugal</a></li>
+              <li><a class="dropdown-item" href="#">Área Escénica de Wulingyuan, China</a></li>
+              <li><a class="dropdown-item" href="#">Arboleda de bambú de Arashiyama, Japón</a></li>
+              <li><a class="dropdown-item" href="#">Desierto de Namib, Namibia</a></li>
+              <li><a class="dropdown-item" href="#">Reynisfjara, Islandia</a></li>
+              <li><a class="dropdown-item" href="#">Capadocia, Turquía</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <header>
+    <h1>Los Mejores Paisajes de la Naturaleza</h1>
+  </header>
+  <main>
+    <div class="block">
+      <img src="https://elkilimanjaro.com/wp-content/uploads/el-kilimanjaro-entre-nubes-700x474.jpg" alt="Monte Kilimanjaro, Tanzania">
+      <h2>Monte Kilimanjaro, Tanzania</h2>
+      <p>La majestuosa cumbre del continente africano, el Monte Kilimanjaro se alza como una imponente maravilla natural. Con sus nieves eternas y paisajes cambiantes a medida que asciendes, es un destino deseado por los amantes del trekking y la naturaleza.</p>
+    </div>
+    <div class="block">
+      <img src="https://www.sierraclub.org/sites/default/files/blog/Antartica%200.png" alt="Antártida">
+      <h2>Antártida</h2>
+      <p>Un vasto y frío continente cubierto de hielo y rodeado de aguas heladas. La Antártida ofrece un escenario único de belleza primitiva y vida silvestre adaptada al extremo. Es un laboratorio natural para la investigación científica y una experiencia única para los aventureros valientes.</p>
+    </div>
+    <div class="block">
+      <img src="https://rccl-h.assetsadobe.com/is/image/content/dam/royal/data/ports/napali-coast-hawaii/overview/napali-coast-hawaii-panoramic-view.jpg?$750x320$" alt="Costa de Na Pali, Hawái">
+      <h2>Costa de Na Pali, Hawái</h2>
+      <p>Un tramo espectacular e inaccesible por carretera en la isla de Kauai. Sus acantilados escarpados, valles exuberantes y aguas cristalinas forman un paisaje costero impresionante que solo se puede explorar a pie, en helicóptero o en barco.</p>
+    </div>
+    <div class="block">
+      <img src="https://a.cdn-hotels.com/gdcs/production24/d222/1f2ca1b1-3ac6-426a-a916-493651a56b75.jpg?impolicy=fcrop&w=800&h=533&q=medium" alt="Capri, Italia">
+      <h2>Capri, Italia</h2>
+      <p>Una joya mediterránea, Capri es famosa por sus aguas azul turquesa, grutas marinas y paisajes montañosos. El encanto de la isla se refleja en sus elegantes boutiques, jardines fragantes y vistas panorámicas desde lo alto.</p>
+    </div>
+    <div class="block">
+      <img src="https://imagenes.elpais.com/resizer/tpUY1e24MBSjV-WwvwthjXWccgE=/1960x1103/ep01.epimg.net/elviajero/videos/2016/05/09/videos/1462811807_394319_59167000_fotograma_4.jpg" alt="Salto Ángel, Venezuela">
+      <h2>Salto Ángel, Venezuela</h2>
+      <p>La cascada más alta del mundo, el Salto Ángel, cae con una gracia imponente desde un acantilado en el Parque Nacional Canaima. Su caída libre de más de 800 metros es una maravilla natural que evoca asombro y admiración.</p>
+    </div>
+    <div class="block">
+      <img src="https://i.pinimg.com/originals/53/1d/75/531d75c42aa8a5dae017f59520d45eeb.jpg" alt="Gran Cañón, Arizona, Estados Unidos">
+      <h2>Gran Cañón, Arizona, Estados Unidos</h2>
+      <p>Una garganta escarpada y rocosa tallada por el río Colorado a lo largo de millones de años. Sus vastos paisajes de colores cambiantes y profundidades insondables lo convierten en un ícono natural que atrae a millones de visitantes.</p>
+    </div>
+    <div class="block">
+      <img src="https://estaticos-cdn.prensaiberica.es/clip/69863c6b-5cc1-483e-82d7-334289b05f32_source-aspect-ratio_default_0.jpg" alt="Las Azores, Portugal">
+      <h2>Las Azores, Portugal</h2>
+      <p>Un archipiélago en medio del Atlántico, Las Azores son un paraíso volcánico de exuberantes prados, lagos tranquilos y aguas termales naturales. Su belleza natural virgen y su ambiente tranquilo son una escapada perfecta.</p>
+    </div>
+    <div class="block">
+      <img src="https://data.viaje-a-china.com/information-view/information/word_img/e5fa95ae58b36f91e590fc6b05e0556d.jpg" alt="Área Escénica de Wulingyuan, China">
+      <h2>Área Escénica de Wulingyuan, China</h2>
+      <p>Hogar de más de 3,000 pilares de piedra y picos de arenisca, este sitio es famoso por su paisaje kárstico único. Los pilares imponentes, los valles profundos y los cursos de agua serpenteantes crean un panorama surrealista.</p>
+    </div>
+    <div class="block">
+      <img src="https://e0.pxfuel.com/wallpapers/562/919/desktop-wallpaper-arashiyama-bamboo-grove-kyoto-japan-studio.jpg" alt="Arboleda de bambú de Arashiyama, Japón">
+      <h2>Arboleda de bambú de Arashiyama, Japón</h2>
+      <p>Un bosque de bambú cerca de Kioto, cuyos altos tallos crean un pasillo de belleza serena. Caminar entre las cañas de bambú que se mecen suavemente es una experiencia mágica y espiritual.</p>
+    </div>
+</main>
+<div class="block">
+    <h2>Información de Lugares</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Lugar</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monte Kilimanjaro, Tanzania</td>
+          <td>La majestuosa cumbre del continente africano, el Monte Kilimanjaro se alza como una imponente maravilla natural. Con sus nieves eternas y paisajes cambiantes a medida que asciendes, es un destino deseado por los amantes del trekking y la naturaleza.</td>
+        </tr>
+        <tr>
+          <td>Antártida</td>
+          <td>Un vasto y frío continente cubierto de hielo y rodeado de aguas heladas. La Antártida ofrece un escenario único de belleza primitiva y vida silvestre adaptada al extremo. Es un laboratorio natural para la investigación científica y una experiencia única para los aventureros valientes.</td>
+        </tr>
+        <tr>
+          <td>Costa de Na Pali, Hawái</td>
+          <td>Un tramo espectacular e inaccesible por carretera en la isla de Kauai. Sus acantilados escarpados, valles exuberantes y aguas cristalinas forman un paisaje costero impresionante que solo se puede explorar a pie, en helicóptero o en barco.</td>
+        </tr>
+        <tr>
+          <td>Capri, Italia</td>
+          <td>Una joya mediterránea, Capri es famosa por sus aguas azul turquesa, grutas marinas y paisajes montañosos. El encanto de la isla se refleja en sus elegantes boutiques, jardines fragantes y vistas panorámicas desde lo alto.</td>
+        </tr>
+        <tr>
+          <td>Salto Ángel, Venezuela</td>
+          <td>La cascada más alta del mundo, el Salto Ángel, cae con una gracia imponente desde un acantilado en el Parque Nacional Canaima. Su caída libre de más de 800 metros es una maravilla natural que evoca asombro y admiración.</td>
+        </tr>
+        <tr>
+          <td>Gran Cañón, Arizona, Estados Unidos</td>
+          <td>Una garganta escarpada y rocosa tallada por el río Colorado a lo largo de millones de años. Sus vastos paisajes de colores cambiantes y profundidades insondables lo convierten en un ícono natural que atrae a millones de visitantes.</td>
+        </tr>
+        <tr>
+          <td>Las Azores, Portugal</td>
+          <td>Un archipiélago en medio del Atlántico, Las Azores son un paraíso volcánico de exuberantes prados, lagos tranquilos y aguas termales naturales. Su belleza natural virgen y su ambiente tranquilo son una escapada perfecta.</td>
+        </tr>
+        <tr>
+          <td>Área Escénica de Wulingyuan, China</td>
+          <td>Hogar de más de 3,000 pilares de piedra y picos de arenisca, este sitio es famoso por su paisaje kárstico único. Los pilares imponentes, los valles profundos y los cursos de agua serpenteantes crean un panorama surrealista.</td>
+        </tr>
+        <tr>
+          <td>Arboleda de bambú de Arashiyama, Japón</td>
+          <td>Un bosque de bambú cerca de Kioto, cuyos altos tallos crean un pasillo de belleza serena. Caminar entre las cañas de bambú que se mecen suavemente es una experiencia mágica y espiritual.</td>
+        </tr>
+        <tr>
+          <td>Desierto de Namib, Namibia</td>
+          <td>Uno de los desiertos más antiguos y espectaculares del mundo, el Desierto de Namib es conocido por sus dunas rojizas y paisajes desolados que contrastan con el cielo azul profundo.</td>
+        </tr>
+        <tr>
+          <td>Reynisfjara, Islandia</td>
+          <td>Una playa de arena negra rodeada de columnas de basalto y acantilados impresionantes. La naturaleza dramática de Reynisfjara, con sus olas poderosas y formaciones rocosas únicas, es una muestra de la esencia de Islandia.</td>
+        </tr>
+        <tr>
+          <td>Capadocia, Turquía</td>
+          <td>Una región única famosa por sus formaciones rocosas cónicas y ciudades subterráneas. Los vuelos en globo sobre los paisajes surrealistas al amanecer son una experiencia inolvidable.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="block">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4MkVwZaJCF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h2>Los Mejores Paisajes del Mundo (Video)</h2>
+    <p>Disfruta de este impresionante video que te llevará a un recorrido visual por algunos de los paisajes naturales más sorprendentes de todo el mundo.</p>
+  </div>
+</div>
+<footer>
+  <p>Derechos reservados © 2023 Naturaleza en su Esplendor</p>
+</footer>
+
+<!-- Bootstrap JS y FontAwesome -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gestión de Ventas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("fondo_ventas.jpg");
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 150px;
+    }
+
+    .functions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .function-card {
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+      padding: 10px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .function-card img {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+
+    .function-card h3 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .function-card h3:hover {
+      color: blue;
+    }
+
+    .function-card p {
+      display: none;
+      margin: 10px 0;
+    }
+
+    .function-card details[open] p {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://d500.epimg.net/cincodias/imagenes/2015/05/08/pyme/1431098283_691735_1431098420_noticia_normal.jpg" alt="Logo de la empresa">
+    </div>
+    <h2 style="text-align: center;">Gestión de Ventas</h2>
+    <div class="functions">
+      <div class="function-card">
+        <img src="https://img2.freepng.es/20180421/dyw/kisspng-sales-computer-icons-purchasing-e-commerce-selling-5adad4d88ac830.6198261515242907765685.jpg" alt="Icono 1">
+        <details>
+          <summary><h3>Ventas</h3></summary>
+          <p>
+            Captura pedidos, facturas y pagos. Seguimiento y análisis de ventas.
+          </p>
+        </details>
+      </div>
+      <div class="function-card">
+        <img src="https://e7.pngegg.com/pngimages/853/761/png-clipart-computer-icons-system-inventory-management-software-email-miscellaneous-angle.png" alt="Icono 2">
+        <details>
+          <summary><h3>Consultar Inventario</h3></summary>
+          <p>
+            Verifica el stock de productos. Detalles y disponibilidad.
+          </p>
+        </details>
+      </div>
+      <div class="function-card">
+        <img src="https://w7.pngwing.com/pngs/49/117/png-transparent-computer-icons-order-picking-text-task-symbol.png" alt="Icono 3">
+        <details>
+          <summary><h3>Realizar Pedido</h3></summary>
+          <p>
+            Crea y envía pedidos. Seguimiento hasta la entrega.
+          </p>
+        </details>
+      </div>
+      <div class="function-card">
+        <img src="https://w7.pngwing.com/pngs/830/738/png-transparent-computer-icons-product-return-returns-thumbnail.png" alt="Icono 4">
+        <details>
+          <summary><h3>Devoluciones</h3></summary>
+          <p>
+            Gestiona devoluciones de productos. Procesamiento y reembolsos.
+          </p>
+        </details>
+      </div>
+      <div class="function-card">
+        <img src="https://w7.pngwing.com/pngs/829/476/png-transparent-computer-icons-business-report-text-logo-sign.png" alt="Icono 5">
+        <details>
+          <summary><h3>Generar Reportes</h3></summary>
+          <p>
+            Informes y análisis de ventas, inventario y ganancias.
+          </p>
+        </details>
+      </div>
+      <div class="function-card">
+        <img src="https://w7.pngwing.com/pngs/257/93/png-transparent-settings-gear-icon-gear-configuration-set-up-thumbnail.png" alt="Icono 6">
+        <details>
+          <summary><h3>Configuración</h3></summary>
+          <p>
+            Ajustes personalizados y permisos de acceso.
+          </p>
+        </details>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gestión de Inventarios</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("fondo_inventarios.jpg");
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 150px;
+    }
+
+    .functions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .function-card {
+      width: 300px;
+      height: 300px;
+      margin: 20px;
+      padding: 10px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .function-card img {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+
+    .function-card h3 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .function-card h3:hover {
+      color: blue;
+    }
+
+    .function-card p {
+      display: none;
+      margin: 10px 0;
+    }
+
+    .function-card details[open] p {
+      display: block;
+    }
+    
+    .button-container {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 20px;
+    }
+    
+    .button-container button {
+      padding: 10px 20px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+    
+    .button-container button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://d500.epimg.net/cincodias/imagenes/2015/05/08/pyme/1431098283_691735_1431098420_noticia_normal.jpg" alt="Logo de la empresa">
+    </div>
+    <h2 style="text-align: center;">Gestion de Inventarios</h2>
+    <div class="functions">
+      <div class="function-card">
+        <img src="https://e7.pngegg.com/pngimages/853/761/png-clipart-computer-icons-system-inventory-management-software-email-miscellaneous-angle.png" alt="Icono 1">
+        <details>
+          <summary><h3>Verificar Stock</h3></summary>
+          <p>
+            Verifica el stock de productos. Detalles y disponibilidad.
+          </p>
+          <div class="button-container">
+            <button onclick="window.location.href='verificar_stock.html'">Verificar Stock</button>
+            <button onclick="window.location.href='detalles_inventario.html'">Detalles de Inventario</button>
+          </div>
+        </details>
+      </div>
+      <div class="function-card">
+        <img src="https://img.icons8.com/pastel-glyph/2x/product.png" alt="Icono 2">
+        <details>
+          <summary><h3>Agregar Producto</h3></summary>
+          <p>
+            Agrega nuevos productos al inventario. Detalles y especificaciones.
+          </p>
+          <div class="button-container">
+            <button onclick="window.location.href='agregar_producto.html'">Agregar Producto</button>
+            <button onclick="window.location.href='detalles_producto.html'">Detalles del Producto</button>
+          </div>
+        </details>
+      </div>
+      <div class="function-card">
+        <img src="https://img.icons8.com/dusk/2x/edit-file.png" alt="Icono 3">
+        <details>
+          <summary><h3>Editar Producto</h3></summary>
+          <p>
+            Edita la informacion de un producto existente en el inventario.
+          </p>
+          <div class="button-container">
+            <button onclick="window.location.href='editar_producto.html'">Editar Producto</button>
+            <button onclick="window.location.href='historial_cambios.html'">Historial de Cambios</button>
+          </div>
+        </details>
+      </div>
+      <div class="function-card">
+        <img src="https://img.icons8.com/fluency/2x/buy.png" alt="Icono 4">
+        <details>
+          <summary><h3>Comprar Producto</h3></summary>
+          <p>
+            Realiza compras de nuevos productos para el inventario.
+          </p>
+          <div class="button-container">
+            <button onclick="window.location.href='comprar_producto.html'">Comprar Producto</button>
+            <button onclick="window.location.href='registro_compras.html'">Registro de Compras</button>
+          </div>
+        </details>
+      </div>
+      <div class="function-card">
+        <img src="https://img.icons8.com/dusk/2x/delete-property.png" alt="Icono 5">
+        <details>
+          <summary><h3>Eliminar Producto</h3></summary>
+          <p>
+            Elimina un producto del inventario.
+          </p>
+          <div class="button-container">
+            <button onclick="window.location.href='eliminar_producto.html'">Eliminar Producto</button>
+            <button onclick="window.location.href='historial_eliminar.html'">Historial de Eliminaciones</button>
+          </div>
+        </details>
+      </div>
+      <div class="function-card">
+        <img src="https://img.icons8.com/ios-glyphs/2x/settings--v1.png" alt="Icono 6">
+        <details>
+          <summary><h3>Configuracion</h3></summary>
+          <p>
+            Ajustes personalizados y permisos de acceso.
+          </p>
+          <div class="button-container">
+            <button onclick="window.location.href='ajustes_personalizados.html'">Ajustes Personalizados</button>
+            <button onclick="window.location.href='permisos_acceso.html'">Permisos de Acceso</button>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
